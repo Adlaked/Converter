@@ -1,0 +1,245 @@
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta http-equiv="x-ua-compatible" content="ie=edge">
+                <title>Convert page</title>
+                <!-- Font Awesome -->
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+                <!-- Bootstrap core CSS -->
+                <link href="css/bootstrap.min.css" rel="stylesheet">
+                <!-- Material Design Bootstrap -->
+                <link href="css/mdb.min.css" rel="stylesheet">
+                <!-- Your custom styles (optional) -->
+                <link href="css/style.css" rel="stylesheet">
+                <link rel="stylesheet" href="javastyle.css">
+              </head>
+    <body>
+
+        <header>
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#"><strong></strong></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                  </li>
+                </ul>
+                <form class="form-inline">
+                  <div class="md-form my-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar -->
+          <!-- Full Page Intro -->
+          <div class="view" style="background-image: url('meditation.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light align-items-center">
+              <!-- Content -->
+              <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-12 mb-4 purple-text text-right">
+                    <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>SWIFT CONVERT</strong></h1>
+                    <hr class="hr-light my-20 wow fadeInDown text-right" data-wow-delay="0.4s">
+                    <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Accurate & Reliable</strong></h5>
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalCart1">Currency</button>
+
+                    <!-- Modal: modalCart -->
+                    <div class="modal fade" id="modalCart1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel rgba-light-light"
+                      aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <!--Header-->
+                          <div class="modal-header" > 
+                            <h2 class="modal-title" id="myModalLabel" ></h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <!--Body-->
+                          <div class="modal-body">
+                    
+                                <form name="converter">
+                                        <table border="0">
+                                        <tr>
+                                        <td><h5 class="grey-text">Euro:</h5> </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+                                        </tr>
+                                        <tr>
+                                        <td><h5 class="grey-text">Naira:</h5> </td><td><input type="text" name="naira" onChange="nairaConverter()" /></td>
+                                        </tr>
+                                        <tr>
+                                        <td><h5 class="grey-text">US Dollar:</h5> </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+                                        </tr>
+                                        <tr>
+                                        <td><h5 class="grey-text">British Pound:</h5></td><td><input type="text" name="pound" onChange="poundConverter()" /></td>
+                                        </tr>
+                                        <tr>
+                                        <td><h5 class="grey-text">Japanese Yen:</h5> </td><td><input type="text" name="yen" onChange="yenConverter()" /></td>
+                                        
+                                        </tr>
+                                        <tr>
+                                          <td><h5 class="grey-text">Swedish Crown:</h5> </td><td><input type="text" name="Sek" onChange="sekConverter()" /></td>
+                                          
+                                        </tr>
+                                        <tr>
+                                        <td colspan="2" align="right"><input type="button" value="Convert!" /></td>
+                                        </tr>
+                                        </table>
+                                        </form>
+
+                                        <script language="JavaScript">
+                                                
+                                                function euroConverter(){
+                                                document.converter.dollar.value = document.converter.euro.value * 1.470
+                                                document.converter.pound.value = document.converter.euro.value * 0.717
+                                                document.converter.yen.value = document.converter.euro.value * 165.192
+                                                document.converter.naira.value = document.converter.euro.value * 400
+
+                                                }
+                                                
+                                                function nairaConverter(){
+                                                document.converter.dollar.value = document.converter.euro.value * 1.470
+                                                document.converter.pound.value = document.converter.euro.value * 0.717
+                                                document.converter.yen.value = document.converter.euro.value * 165.192
+                                                document.converter.euro.value = document.converter.dollar.value * 0.680
+
+                                                }
+                                                function dollarConverter(){
+                                                document.converter.euro.value = document.converter.dollar.value * 0.680
+                                                document.converter.pound.value = document.converter.dollar.value * 0.488
+                                                document.converter.yen.value = document.converter.dollar.value * 112.36
+                                                document.converter.naira.value = document.converter.euro.value * 300
+
+                                                }
+                                                function poundConverter(){
+                                                document.converter.dollar.value = document.converter.pound.value * 2.049
+                                                document.converter.euro.value = document.converter.pound.value * 1.394
+                                                document.converter.yen.value = document.converter.pound.value * 230.27
+                                                document.converter.naira.value = document.converter.euro.value * 200
+
+                                                }
+                                                function yenConverter(){
+                                                document.converter.dollar.value = document.converter.yen.value * 0.0089
+                                                document.converter.pound.value = document.converter.yen.value * 0.00434
+                                                document.converter.euro.value = document.converter.yen.value * 0.00605
+                                                document.converter.naira.value = document.converter.euro.value * 100
+
+                                                }
+                                                function sekConverter(){
+                                                document.converter.dollar.value = document.converter.sek.value * 9.65
+                                                document.converter.pound.value = document.converter.sek.value * 10.80
+                                                document.converter.yen.value = document.converter.sek.value * 0.088
+                                                document.converter.naira.value = document.converter.euro.value * 37.32
+                                                }
+                                                //-->
+                                                </script>
+                                
+                          </div>
+                          <!--Footer-->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal: modalCart -->
+                                        <!-- Button trigger modal-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCart2">Temperature </button>
+
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalCart2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header" > 
+        <h2 class="modal-title" id="myModalLabel" ></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+            <h2> Celcius to Fahrenhet</h2>
+
+            <p>Insert a number into one of the input fields below:</p>
+            
+            <p><input id="c" onchange="convert('C')"> Celsius</p>
+            
+            <p><input id="f" onchange="convert('F')"> Fahrenheit</p>
+            <button id="submit" type="button" onclick="convert('degree')">submit</button> 
+                       
+            <script>
+            function convert(degree) {
+              var x;
+              if (degree == "C") {
+                x = document.getElementById("c").value * 9 / 5 + 32;
+                document.getElementById("f").value = Math.round(x);
+              } else {
+                x = (document.getElementById("f").value -32) * 5 / 9;
+                document.getElementById("c").value= Math.round(x);
+              }
+            }
+            </script>
+            
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: modalCart -->
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+          <!-- Full Page Intro -->
+        </header>
+        <!-- Main navigation -->
+        <!--Main Layout-->
+        <main>
+          <!-- <div class="container"> -->
+            <!--Grid row-->
+            <!-- <div class="row py-5"> -->
+              <!--Grid column-->
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+        </main>
+        <!--Main Layout-->
+        <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+    </body>
+</html>
